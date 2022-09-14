@@ -15,6 +15,8 @@ fn main() {
 
     let tt: HashSet<String> = t.iter().cloned().collect();
 
+    println!("{:?}", a);
+
     for ss in permutohedron::Heap::new(&mut s) {
         for aa in &a {
             let str_len: usize =
